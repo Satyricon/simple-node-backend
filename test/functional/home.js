@@ -6,7 +6,7 @@ const assert = require('assert'),
 const endpoint = `http://localhost:8080/`;
 
 describe('root endpoint', () => {
-    it('can get lucky number', done => {
+    it('can get hello', done => {
         request.get(endpoint, (err, resp) => {
             assert(!err);
             assert.equal(resp.statusCode, HttpStatus.OK);
